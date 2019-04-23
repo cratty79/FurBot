@@ -1,3 +1,43 @@
+<a name="4.4.6" />
+
+# 4.4.6 (March 28th, 2019)
+
+### Features
+- [NEW] You can now change FurBot's prefix with the `prefix` command, only users with
+`MANAGE SERVER` permissions can use this command. You can only have a single or double
+character prefix. Only certain characters are allowed.
+
+### Bug Fixes
+- [FIX] Searching for example `cubone` on the lewd commands no longer triggers the blacklist.
+- [FIX] You can now use `previous`, image links and attachments on the `pride` image command.
+- [FIX] The `word` command now doesn't turn multiple regional_indicator emoji into a Flag.
+
+### Notes
+- [NEW] FurBot now scrolls through several Playing statuses displaying some random texts or commands.
+
+
+<a name="4.4.5" />
+
+# 4.4.5 (March 8th, 2019)
+
+### Features
+- [NEW] `blacklist strict` will now remove blacklisted results completely and, if possible, add a non blacklisted result.
+So for example, you will no longer get 3 images if you searched for 5 but 2 were blacklisted. The bot will now try to get
+you 5 images all the time, unless the results page only contained 5 (or less) images to begin with.
+
+- [NEW] `cub`, `loli`, `young` and `shota` are now blacklisted by default since these artworks are not allowed under discord ToS.
+You do not need to add or remove them from your own blacklists, these are hardcoded in.
+
+### Bug Fixes
+- [FIX] Removed the possibility of finding duplicate images in the image results for the lewd commands.
+- [FIX] Fixed a long standing bug where if the artist name contained a number the lewd commands would not work properly.
+- [FIX] Fixed some lewd commands (konachan, danbooru, gelbooru) that were no longer working, they are all working now.
+- [FIX] The say command no longer removes markdown (you can't use @ still)
+
+### Notes
+- [REMOVED] The christmas commands. It's march alright, get over it!
+
+
 <a name="4.4.4" />
 
 # 4.4.4 (December 20th, 2018)
